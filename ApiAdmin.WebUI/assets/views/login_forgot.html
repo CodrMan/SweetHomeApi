@@ -1,0 +1,49 @@
+<!-- start: FORGOT -->
+<div class="row">
+	<div class="main-login col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-4">
+		<div class="logo">
+			<img alt="{{app.name}}"/>
+		</div>
+		<!-- start: FORGOT BOX -->
+		<div class="box-forgot" ng-controller="AccountCtrl">
+			<form name="Form" id="form1" class="form-forgot" ng-submit="forgotPasswordSubmit(Form)">
+				<fieldset>
+					<legend>
+						Forget Password?
+					</legend>
+				    <p>
+				        Enter your e-mail address below to reset your password.
+				    </p>
+
+                    <div class="form-group" ng-class="{'has-error':Form.email.$dirty && Form.email.$invalid, 'has-success':Form.email.$valid}">
+                        <label class="control-label">
+                            Email <span class="symbol required"></span>
+                        </label>
+                        <span class="input-icon">
+                            <input type="email" placeholder="Enter a valid E-mail" class="form-control" name="email" ng-model="forgotPass.Email" required>
+                            <i class="fa fa-user"></i>
+                            <span class="error text-small block" ng-if="Form.email.$dirty && Form.email.$error.required">Email is required.</span>
+                            <span class="error text-small block" ng-if="Form.email.$error.email">Please, enter a valid email address.</span>
+                        </span>
+                    </div>
+
+					<div class="form-actions">
+						<a class="btn btn-primary btn-o" ui-sref="login.signin">
+							<i class="fa fa-chevron-circle-left"></i> Log-In
+						</a>
+						<button type="submit" class="btn btn-primary pull-right">
+							Submit <i class="fa fa-arrow-circle-right"></i>
+						</button>
+					</div>
+				</fieldset>
+			</form>
+			<!-- start: COPYRIGHT -->
+			<div class="copyright">
+				{{app.year}} &copy; {{ app.name }} by {{ app.author }}.
+			</div>
+			<!-- end: COPYRIGHT -->
+		</div>
+		<!-- end: FORGOT BOX -->
+	</div>
+</div>
+<!-- end: FORGOT -->
