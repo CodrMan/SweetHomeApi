@@ -1,35 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.23107.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiAdmin.Api", "ApiAdmin.Api\ApiAdmin.Api.csproj", "{45A6D326-F6B6-43D7-BE41-92CEF75D4EA3}"
-EndProject
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "ApiAdmin.WebUI", "ApiAdmin.WebUI", "{C9F5C112-9B7E-4FEA-A2FC-85C3A7B1B4C4}"
-	ProjectSection(WebsiteProperties) = preProject
-		SccProjectName = "SAK"
-		SccAuxPath = "SAK"
-		SccLocalPath = "SAK"
-		SccProvider = "SAK"
-		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
-		Debug.AspNetCompiler.VirtualPath = "/localhost_60172"
-		Debug.AspNetCompiler.PhysicalPath = "ApiAdmin.WebUI\"
-		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_60172\"
-		Debug.AspNetCompiler.Updateable = "true"
-		Debug.AspNetCompiler.ForceOverwrite = "true"
-		Debug.AspNetCompiler.FixedNames = "false"
-		Debug.AspNetCompiler.Debug = "True"
-		Release.AspNetCompiler.VirtualPath = "/localhost_60172"
-		Release.AspNetCompiler.PhysicalPath = "ApiAdmin.WebUI\"
-		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_60172\"
-		Release.AspNetCompiler.Updateable = "true"
-		Release.AspNetCompiler.ForceOverwrite = "true"
-		Release.AspNetCompiler.FixedNames = "false"
-		Release.AspNetCompiler.Debug = "False"
-		VWDPort = "60172"
-		SlnRelativePath = "ApiAdmin.WebUI\"
-		DefaultWebSiteLanguage = "Visual C#"
-	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiAdmin.IoC", "ApiAdmin.IoC\ApiAdmin.IoC.csproj", "{41AB6625-AD28-41FC-90B1-A5118A9FBE00}"
 EndProject
@@ -53,10 +27,6 @@ Global
 		{45A6D326-F6B6-43D7-BE41-92CEF75D4EA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{45A6D326-F6B6-43D7-BE41-92CEF75D4EA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{45A6D326-F6B6-43D7-BE41-92CEF75D4EA3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C9F5C112-9B7E-4FEA-A2FC-85C3A7B1B4C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C9F5C112-9B7E-4FEA-A2FC-85C3A7B1B4C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C9F5C112-9B7E-4FEA-A2FC-85C3A7B1B4C4}.Release|Any CPU.ActiveCfg = Debug|Any CPU
-		{C9F5C112-9B7E-4FEA-A2FC-85C3A7B1B4C4}.Release|Any CPU.Build.0 = Debug|Any CPU
 		{41AB6625-AD28-41FC-90B1-A5118A9FBE00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{41AB6625-AD28-41FC-90B1-A5118A9FBE00}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{41AB6625-AD28-41FC-90B1-A5118A9FBE00}.Release|Any CPU.ActiveCfg = Release|Any CPU
