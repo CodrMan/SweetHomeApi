@@ -1,0 +1,20 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/SweetHome.Api/bin
+/.vs
+/SweetHome.Api/obj/Debug
+/SweetHome.Core/bin/Debug
+/SweetHome.Core/obj/Debug
+/SweetHome.Data/bin/Debug
+/SweetHome.Data/obj/Debug
+/SweetHome.IoC/bin/Debug
+/SweetHome.IoC/obj/Debug
+/SweetHome.Notifications/bin/Debug
+/SweetHome.Notifications/obj/Debug
+/SweetHome.Services/bin/Debug
+/SweetHome.Services/obj/Debug
+/SweetHome.WindowsService/bin/Debug
+/SweetHome.WindowsService/obj/Debug
+/packages

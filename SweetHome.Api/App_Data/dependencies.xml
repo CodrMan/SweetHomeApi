@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<autofac-dependencies>
+
+  <components>
+    
+    <!-- DBContext -->
+
+    <component
+      service="SweetHome.Data.DataDbContext, SweetHome.Data"
+      type="SweetHome.Data.DataDbContext, SweetHome.Data"
+      instance-scope="per-lifetime-scope"/>
+    
+    <!-- Repositories -->
+
+    <component
+      service="SweetHome.Core.Interfaces.ISettingRepository, SweetHome.Core"
+      type="SweetHome.Data.Repositories.SettingRepository, SweetHome.Data"
+      instance-scope="per-lifetime-scope"/>
+
+    <component
+      service="SweetHome.Core.Interfaces.IMessageRepository, SweetHome.Core"
+      type="SweetHome.Data.Repositories.MessageRepository, SweetHome.Data"
+      instance-scope="per-lifetime-scope"/>
+
+    <!-- Services -->
+
+    <component
+      service="SweetHome.Services.Abstract.ISettingService, SweetHome.Services"
+      type="SweetHome.Services.Concrete.SettingService, SweetHome.Services"
+      instance-scope="per-lifetime-scope"/>
+
+    <component
+      service="SweetHome.Services.Abstract.IMessageService, SweetHome.Services"
+      type="SweetHome.Services.Concrete.MessageService, SweetHome.Services"
+      instance-scope="per-lifetime-scope"/>
+    
+    <!-- Managers -->
+
+    <component
+      service="SweetHome.Services.Concrete.AppUserManager, SweetHome.Services"
+      type="SweetHome.Services.Concrete.AppUserManager, SweetHome.Services"
+      instance-scope="per-lifetime-scope"/>
+
+    <component
+      service="SweetHome.Services.Concrete.AppRoleManager, SweetHome.Services"
+      type="SweetHome.Services.Concrete.AppRoleManager, SweetHome.Services"
+      instance-scope="per-lifetime-scope"/>
+    
+    <!-- Stores -->
+
+    <component
+      service="SweetHome.Data.Identity.AppUserStore, SweetHome.Data"
+      type="SweetHome.Data.Identity.AppUserStore, SweetHome.Data"
+      instance-scope="per-lifetime-scope"/>
+
+    <component
+      service="SweetHome.Data.Identity.AppRoleStore, SweetHome.Data"
+      type="SweetHome.Data.Identity.AppRoleStore, SweetHome.Data"
+      instance-scope="per-lifetime-scope"/>
+    
+    <!-- Reflector -->
+
+    <component
+      service="SweetHome.Core.Reflection.ISettingsReflector, SweetHome.Core"
+      type="SweetHome.Core.Reflection.SettingsReflector, SweetHome.Core"
+      instance-scope="per-lifetime-scope"/>
+      
+  </components>
+
+</autofac-dependencies>
