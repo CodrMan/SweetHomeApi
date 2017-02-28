@@ -81,9 +81,11 @@
     <Compile Include="Entities\Identity\AspNetUserLogin.cs" />
     <Compile Include="Entities\log4net\Log.cs" />
     <Compile Include="Entities\Message.cs" />
+    <Compile Include="Entities\Product.cs" />
     <Compile Include="Entities\Setting.cs" />
     <Compile Include="Enums\MessageState.cs" />
     <Compile Include="Interfaces\IMessageRepository.cs" />
+    <Compile Include="Interfaces\IProductRepository.cs" />
     <Compile Include="Interfaces\IRepository.cs" />
     <Compile Include="Interfaces\ISettingRepository.cs" />
     <Compile Include="Messages\EmailNotificationMessage.cs" />

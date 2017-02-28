@@ -23,6 +23,7 @@ namespace SweetHome.Api.Controllers
         protected readonly AppUserManager UserManager;
 
         private AppUser _currentUser;
+
         public AppUser CurrentUser
         {
             get

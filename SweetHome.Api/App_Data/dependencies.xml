@@ -22,6 +22,11 @@
       type="SweetHome.Data.Repositories.MessageRepository, SweetHome.Data"
       instance-scope="per-lifetime-scope"/>
 
+    <component
+      service="SweetHome.Core.Interfaces.IProductRepository, SweetHome.Core"
+      type="SweetHome.Data.Repositories.ProductRepository, SweetHome.Data"
+      instance-scope="per-lifetime-scope"/>
+
     <!-- Services -->
 
     <component
@@ -32,6 +37,11 @@
     <component
       service="SweetHome.Services.Abstract.IMessageService, SweetHome.Services"
       type="SweetHome.Services.Concrete.MessageService, SweetHome.Services"
+      instance-scope="per-lifetime-scope"/>
+    
+    <component
+      service="SweetHome.Services.Abstract.IProductService, SweetHome.Services"
+      type="SweetHome.Services.Concrete.ProductService, SweetHome.Services"
       instance-scope="per-lifetime-scope"/>
     
     <!-- Managers -->

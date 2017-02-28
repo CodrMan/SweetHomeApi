@@ -20,10 +20,7 @@ namespace SweetHome.Api.Controllers
     {
         private readonly IMessageService _messageService;
 
-        public AccountController(
-            AppUserManager userManager,
-            ISettingService settingService,    
-            IMessageService messageService)
+        public AccountController(AppUserManager userManager, ISettingService settingService, IMessageService messageService)
             : base(userManager, settingService)
         {
             _messageService = messageService;

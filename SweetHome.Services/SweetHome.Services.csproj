@@ -94,12 +94,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Abstract\IMessageService.cs" />
+    <Compile Include="Abstract\IProductService.cs" />
     <Compile Include="Abstract\IServiceBase.cs" />
     <Compile Include="Abstract\ISettingService.cs" />
     <Compile Include="AutomapperSetup.cs" />
     <Compile Include="Concrete\AppRoleManager.cs" />
     <Compile Include="Concrete\AppUserManager.cs" />
     <Compile Include="Concrete\MessageService.cs" />
+    <Compile Include="Concrete\ProductService.cs" />
     <Compile Include="Concrete\ServiceBase.cs" />
     <Compile Include="Concrete\SettingService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
