@@ -16,6 +16,7 @@ namespace SweetHome.Data
 
         public virtual DbSet<Setting> Settings { get; set; }
         public virtual DbSet<Message> Messages { get; set; }
+        public virtual DbSet<Product> Products { get; set; } 
 
         public static DataDbContext Create()
         {

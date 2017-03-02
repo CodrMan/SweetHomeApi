@@ -6,7 +6,7 @@ namespace SweetHome.Services.Concrete
 {
     public class ProductService : ServiceBase<Product>, IProductService
     {
-        public ProductService(IRepository<Product> repository) : base(repository)
+        public ProductService(IProductRepository repository) : base(repository)
         {
         }
     }

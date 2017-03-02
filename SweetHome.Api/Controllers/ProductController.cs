@@ -7,6 +7,7 @@ using SweetHome.Services.Concrete;
 
 namespace SweetHome.Api.Controllers
 {
+    [Authorize]
     [JsonWrapper]
     public class ProductController : BaseController
     {
