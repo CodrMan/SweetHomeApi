@@ -63,7 +63,7 @@ namespace SweetHome.Api.Controllers
             }
 
             HttpCode(HttpStatusCode.NotFound);
-            HttpMessage("Something went wrong");
+            HttpMessage("Something went wrong"); //TODO return actual error
 
             return Ok();
         }
