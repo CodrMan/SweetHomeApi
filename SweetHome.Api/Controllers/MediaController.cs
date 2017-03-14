@@ -10,13 +10,11 @@ using Microsoft.AspNet.Identity;
 using SweetHome.Core.DTO;
 using SweetHome.Services.Abstract;
 using SweetHome.Services.Concrete;
-using SweetHome.Api.Infrastructure;
 
 
 namespace SweetHome.Api.Controllers
 {
     [Authorize(Roles = "Admin")]
-    [JsonWrapper]
     public class MediaController : BaseController
     {
         public MediaController(AppUserManager userManager, ISettingService settingService) : base(userManager, settingService)

@@ -4,7 +4,6 @@ using Microsoft.AspNet.Identity;
 using AutoMapper;
 
 using SweetHome.Api.Helpers;
-using SweetHome.Api.Infrastructure;
 using SweetHome.Api.Models;
 using SweetHome.Core.DTO;
 using SweetHome.Core.Entities.Identity;
@@ -15,7 +14,6 @@ using SweetHome.Services.Concrete;
 namespace SweetHome.Api.Controllers
 {
     [RoutePrefix("api/Account")]
-    [JsonWrapper]
     public class AccountController : BaseController
     {
         private readonly IMessageService _messageService;

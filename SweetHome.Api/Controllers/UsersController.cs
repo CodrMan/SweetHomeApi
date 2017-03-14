@@ -9,13 +9,11 @@ using AutoMapper;
 using SweetHome.Core.Entities.Identity;
 using SweetHome.Services.Abstract;
 using SweetHome.Services.Concrete;
-using SweetHome.Api.Infrastructure;
 
 
 namespace SweetHome.Api.Controllers
 {
     [Authorize(Roles = "Admin")]
-    [JsonWrapper]
     public class UsersController : BaseController
     {
         private readonly IMessageService _messageService;

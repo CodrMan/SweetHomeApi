@@ -12,6 +12,7 @@ using SweetHome.Api.Models;
 
 namespace SweetHome.Api.Infrastructure
 {
+    [AttributeUsage(AttributeTargets.Class)]
     public class JsonWrapperAttribute : ActionFilterAttribute
     {
         private readonly ILog _log = LogManager.GetLogger(typeof(JsonWrapperAttribute));

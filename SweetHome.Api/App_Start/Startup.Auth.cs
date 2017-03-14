@@ -23,8 +23,7 @@ namespace SweetHome.Api
                 AllowInsecureHttp = true,
                 TokenEndpointPath = new PathString("/token"),
                 AccessTokenExpireTimeSpan = TimeSpan.FromDays(14),
-                Provider = new SimpleAuthorizationServerProvider(),
-
+                Provider = new SimpleAuthorizationServerProvider()
             };
             
             app.UseOAuthAuthorizationServer(oAuthServerOptions);

@@ -12,6 +12,7 @@ using log4net;
 
 namespace SweetHome.Api.Controllers
 {
+    [JsonWrapper]
     [RequestLogging]
     public class BaseController : ApiController
     {
